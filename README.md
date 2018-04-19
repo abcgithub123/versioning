@@ -6,6 +6,7 @@
 <xsl:template name="MainContent">
    <xsl:choose>   <xsl:when test="($salutation = '') or not($salutation)">Dear Customer</xsl:when>   <xsl:otherwise><xsl:value-of select="$salutation" /></xsl:otherwise>   </xsl:choose>   <p><strong>Credit Card number ending <xsl:value-of select="$last_x_digits" /></strong></p>       <p>We’re letting you know that you’ve used over  <xsl:value-of select="$THRESHOLD" /> of your credit limit on your Credit Card ending <xsl:value-of select="$last_x_digits" />. If you go over your credit limit of <xsl:value-of select="$CREDIT_LIMIT" />then a fee may be charged. You can find full information on the fees you may be charged and how to make payments, on the back of your monthly Credit Card statement.</p>       <p>If you have any questions, please call us on 03457 707 070. Lines are open 24 hours a day, 7 days a week.</p>        
                                 <p>From Your HSBC Premier Team</p>
+
                                 <p>signature</p>
       </xsl:template>
 </xsl:stylesheet>
